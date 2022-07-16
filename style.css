@@ -1,0 +1,115 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15,15,15,0.95);
+  --spacing: 350px;
+
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: chartreuse;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2/ span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+.workdrop {
+  display: none;
+  position:absolute;
+  background-color: black;
+  box-sizing:border-box ;
+  border-style: dotted;
+  border-color: chartreuse;
+  font-size: 15px;
+  white-space: normal;
+}
+.workheader:hover .workdrop {
+  display:block;
+  display: flow-root;
+  font-size: 15px;
+}
+.contactdrop {
+  display: none;
+  position:absolute;
+  background-color: black;
+  box-sizing:border-box ;
+  border-style: dotted;
+  border-color: chartreuse;
+}
+.contact:hover .contactdrop {
+  display:block;
+  display:flow-root ;
+}
+.workdrop {
+  display: none;
+  position:absolute;
+  background-color: black;
+  box-sizing:border-box ;
+  border-style: dotted;
+  border-color: chartreuse;
+}
+.light:hover .workdrop {
+  display:block;
+  display:contents ;
+  font-size: 15px;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin:0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color:chartreuse;
+  background-color: black;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
