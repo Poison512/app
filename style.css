@@ -15,7 +15,7 @@ canvas {
 
 main {
   width: 100vw;
-  color: chartreuse;
+  color: rgb(179, 231, 240);
   z-index: 99;
   position: absolute;
   width: 100%;
@@ -26,10 +26,11 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1, h2, h3, blockquote {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1, h2, h3, blockquote,a {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: rgb(179, 231, 240);
 }
 
 canvas{
@@ -51,7 +52,7 @@ header {
   background-color: black;
   box-sizing:border-box ;
   border-style: dotted;
-  border-color: chartreuse;
+  color: rgb(179, 231, 240);
   font-size: 15px;
   white-space: normal;
 }
@@ -66,7 +67,7 @@ header {
   background-color: black;
   box-sizing:border-box ;
   border-style: dotted;
-  border-color: chartreuse;
+  color: rgb(179, 231, 240);
 }
 .contact:hover .contactdrop {
   display:block;
@@ -78,7 +79,7 @@ header {
   background-color: black;
   box-sizing:border-box ;
   border-style: dotted;
-  border-color: chartreuse;
+  color: rgb(179, 231, 240);
 }
 .light:hover .workdrop {
   display:block;
@@ -103,7 +104,7 @@ blockquote {
 }
 
 blockquote p {
-  color:chartreuse;
+  color: rgb(179, 231, 240);
   background-color: black;
   font-size: 4rem;
   display: inline;

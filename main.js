@@ -36,9 +36,6 @@ pointLight.position.set(20,20,20)
 const ambientLight = new THREE.AmbientLight(0xfffffff)
 scene.add(pointLight, ambientLight)
 
-const lightHelper = new THREE.PointLightHelper(pointLight)
-const gridHelper = new THREE.GridHelper(200,50)
-scene.add(lightHelper, gridHelper)
 
 const controls = new OrbitControls(camera, renderer.domElement)
 
@@ -78,8 +75,8 @@ const cell = new THREE.Mesh(
 );
 scene.add(cell)
 
-cell.position.z = 30;
-cell.position.setX(-10)
+cell.position.z = 25;
+cell.position.setX(-5)
 
 
 
