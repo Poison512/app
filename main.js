@@ -1,4 +1,4 @@
-import '/dist/style.css';
+import '/Users/adrian512/code/Bootcampwork/app/dist/style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
