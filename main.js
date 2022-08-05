@@ -1,6 +1,6 @@
 import './style.css';
-import * as THREE from '/three';
-import { OrbitControls } from '/three/examples/jsm/controls/OrbitControls'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // Setup
 
@@ -52,12 +52,12 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 //background
-const spaceTexture = new THREE.TextureLoader().load('/dist/19816.jpeg');
+const spaceTexture = new THREE.TextureLoader().load('/19816.jpeg');
 scene.background = spaceTexture;
 
 
 //avatar
-const meTexture = new THREE.TextureLoader().load('/dist/alienhead.png');
+const meTexture = new THREE.TextureLoader().load('/alienhead.png');
 
 const myAvatar = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -67,7 +67,7 @@ scene.add(myAvatar)
 
 
 //cell
-const cellTexture = new THREE.TextureLoader().load('/dist/cell.jpeg');
+const cellTexture = new THREE.TextureLoader().load('/cell.jpeg');
 
 const cell = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
